@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="PatchComplete: Learning Multi-Resolution Patch Priors for 3D Shape Completion on Unseen Categories">
+  <meta name="keywords" content="3d shape completion, 3d reconstruction, zero-shot 3d reconstruction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PatchComplete: Learning Multi-Resolution Patch Priors for 3D Shape Completion on Unseen Categories</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="icon" href="../static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="../static/js/fontawesome.all.min.js"></script>
+  <script src="../static/js/bulma-carousel.min.js"></script>
+  <script src="../static/js/bulma-slider.min.js"></script>
+  <script src="../static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://yuchenrao.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <!-- <div class="navbar-dropdown">
+          <a class="navbar-item" href="">
+            Name
+          </a>
+          -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">PatchComplete: Learning Multi-Resolution Patch Priors for 3D Shape Completion on Unseen Categories</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://yuchenrao.github.io/">Yuchen Rao</a>,</span>
+            <span class="author-block">
+              <a href="https://yinyunie.github.io/">Yinyu Nie</a>,</span>
+            <span class="author-block">
+              <a href="https://www.professoren.tum.de/en/dai-angela">Angela Dai</a>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Technical University of Munich</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src='../../images/patchComplete.png' width="100%">
+      <h2 class="subtitle has-text-centered">
+        <span class="dpatchCom">PatchComplete</span> learns strong local priors for 3D shape completion by constructing multi-resolution patch priors from train shapes, which can then be applied for effective shape completion on unseen categories.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="visualizations">
+  <div class="container is-max-desktop">
+    <div class="hero-shapenet">
+      <h2 class="subtitle has-text-centered">
+        <span class="dpatchCom">ShapeNet Visualizations</span>
+      </h2>
+      <video id="shapenet" loop autoplay muted playsinline weight="100%">
+        <source src="videos/shapenet.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="hero-scannet">
+      <h2 class="subtitle has-text-centered">
+        <span class="dpatchCom">ScanNet Visualizations</span>
+      </h2>
+      <video id="shapenet" loop autoplay muted playsinline weight="100%">
+        <source src="videos/scannet.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            While 3D shape representations enable powerful reasoning in many visual and
+            perception applications, learning 3D shape priors tends to be constrained to the
+            specific categories trained on, leading to an inefficient learning process, particularly
+            for general applications with unseen categories. Thus, we propose PatchComplete,
+            which learns effective shape priors based on multi-resolution local patches, which
+            are often more general than full shapes (e.g., chairs and tables often both share
+            legs) and thus enable geometric reasoning about unseen class categories. 
+          </p>
+          <p>
+            To learn these shared substructures, we learn multi-resolution patch priors across all train
+            categories, which are then associated to input partial shape observations by attention
+            across the patch priors, and finally decoded into a complete shape reconstruction.
+            Such patch-based priors avoid overfitting to specific train categories and enable
+            reconstruction on entirely unseen categories at test time.
+          </p>
+          <p>
+            We demonstrate the effectiveness of our approach on synthetic ShapeNet data as well as challenging
+            real-scanned objects from ScanNet, which include noise and clutter, improving
+            over state of the art in novel-category shape completion by 19.3% in chamfer
+            distance on ShapeNet, and 9.0% for ScanNet.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/Ch1rvw2D_Kc"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code></code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website source code is from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
