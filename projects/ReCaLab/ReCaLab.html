@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="../static/css/index.css">
-  <link rel="icon" href="../static/images/favicon.svg">
+  <link rel="icon" href="../static/images/favicon-neutral.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="../static/js/fontawesome.all.min.js"></script>
@@ -89,9 +89,9 @@
             <span class="author-block">
               <a href="https://www.cs.cit.tum.de/camp/members/benjamin-busam/">Benjamin Busam</a><sup>2</sup>, </span>
             <span class="author-block">
-              <a herf="https://scholar.google.com.sg/citations?user=sZU8ZsQAAAAJ&hl=en">Yiren Zhou</a><sup>1</sup>, </span>
+              <a href="https://scholar.google.com.sg/citations?user=sZU8ZsQAAAAJ&hl=en">Yiren Zhou</a><sup>1</sup>, </span>
             <span class="author-block">
-              <a herf="https://scholar.google.com/citations?user=9a1PjCIAAAAJ&hl=en/">Jifei Song</a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=9a1PjCIAAAAJ&hl=en/">Jifei Song</a><sup>1</sup>,</span>
           </div>
 
           <div class="is-size-5 publication-authors">
@@ -103,7 +103,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://arxiv.org/pdf/2312.04784"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -112,7 +112,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href=""
+                <a href="https://arxiv.org/abs/2312.04784"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -122,7 +122,8 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://www.youtube.com/watch?v=Oz83z1es2J4"
+                   target="_blank" rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -131,7 +132,7 @@
                 </a>
               </span>
               <!-- Code Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -139,16 +140,7 @@
                   </span>
                   <span>Code</span>
                   </a>
-              </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
+              </span> -->
             </div>
 
           </div>
@@ -161,22 +153,22 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src='../../images/ReCaLab.pdf' width="100%">
+      <img src='../../images/ReCalab.png' width="100%">
       <h2 class="subtitle has-text-centered">
-        <span class="dpatchCom">Reality's Canvas, Language's Brush: Crafting 3D Avatars from Monocular Video
+        <span class="dpatchCom">ReCaLab is a fully-differentiable pipeline that enables the generation of high-fidelity, photorealistic 3D human avatars from a single RGB video, achieving superior novel pose rendering and intuitive text-based manipulation by decoupling albedo, shading, and pose-conditioned geometry.</span>
       </h2>
     </div>
   </div>
 </section>
 
 
-<section class="visualizations">
+<!-- <section class="visualizations">
   <div class="container is-max-desktop">
     <div class="hero-free_view">
       <h2 class="subtitle has-text-centered">
         <span class="dpatchCom">Free-View Rendering</span>
       </h2>
-      <video id="free_view" loop autoplay muted playsinline weight="100%">
+      <video id="free_view" loop autoplay muted playsinline width="100%">
         <source src="videos/novel_view.mp4" type="video/mp4" />
       </video>
     </div>
@@ -186,12 +178,12 @@
       <h2 class="subtitle has-text-centered">
         <span class="dpatchCom">Text Instructed Human Editing Under Novel View</span>
       </h2>
-      <video id="text_edit" loop autoplay muted playsinline weight="100%">
+      <video id="text_edit" loop autoplay muted playsinline width="100%">
         <source src="videos/edit.mp4" type="video/mp4" />
       </video>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -213,8 +205,11 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://youtu.be/Oz83z1es2J4"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/Oz83z1es2J4?rel=0"
+                  title="ReCaLab Video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -227,8 +222,12 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{
-    }    
+    <pre><code>@article{rao2023reality,
+      title={Reality's Canvas, Language's Brush: Crafting 3D Avatars from Monocular Video},
+      author={Rao, Yuchen and Pellitero, Eduardo Perez and Busam, Benjamin and Zhou, Yiren and Song, Jifei},
+      journal={arXiv preprint arXiv:2312.04784},
+      year={2023}
+    }
     </code></pre>
   </div>
 </section>

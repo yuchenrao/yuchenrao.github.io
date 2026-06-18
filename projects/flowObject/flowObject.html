@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="PatchComplete: Learning Multi-Resolution Patch Priors for 3D Shape Completion on Unseen Categories">
+        content="FlowObject: Flow Steering for Bridging Generative Priors and Reconstruction Fidelity">
   <meta name="keywords" content="3d shape completion, 3d reconstruction, zero-shot 3d reconstruction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PatchComplete: Learning Multi-Resolution Patch Priors for 3D Shape Completion on Unseen Categories</title>
+  <title>FlowObject: Flow Steering for Bridging Generative Priors and Reconstruction Fidelity</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -80,26 +80,38 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">PatchComplete: Learning Multi-Resolution Patch Priors for 3D Shape Completion on Unseen Categories</h1>
+          <h1 class="title is-1 publication-title">FlowObject: Flow Steering for Bridging Generative Priors and Reconstruction Fidelity</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://yuchenrao.github.io/">Yuchen Rao</a>,</span>
+              <a href="https://yuchenrao.github.io/">Yuchen Rao</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://yinyunie.github.io/">Yinyu Nie</a>,</span>
+              <a href="https://xuqianren.github.io/">Xuqian Ren</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://www.professoren.tum.de/en/dai-angela">Angela Dai</a>,
-            </span>
+              <a href="https://yinyunie.github.io/">Yinyu Nie</a><sup>3</sup>, </span>
+            <span class="author-block">
+              <a href="https://sayands.github.io/">Sayan Deb Sarkar</a><sup>4</sup>,</span>
+              <span class="author-block">
+              <a href="https://1zb.github.io/">Biao Zhang</a><sup>5</sup>,</span>
+              <span class="author-block">
+              <a href="https://vincentlepetit.github.io/">Vincent Lepetit</a><sup>6</sup>,</span>
+              <span class="author-block">
+              <a href="https://ivc.tugraz.at/people/friedrich-fraundorfer/">Friedrich Fraundorfer</a><sup>1</sup>,</span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Technical University of Munich</span>
+            <span class="author-block"><sup>1</sup>Graz University of Technology, </span>
+            <span class="author-block"><sup>2</sup>Tampere University, </span>
+            <span class="author-block"><sup>3</sup>Technical University of Munich, </span>
+            <span class="author-block"><sup>4</sup>Stanford University, </span>
+            <span class="author-block"><sup>5</sup>Xi'an Jiaotong University, </span>
+            <span class="author-block"><sup>6</sup>École des Ponts ParisTech</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2206.04916.pdf"
+                <a href="https://arxiv.org/pdf/2606.19019.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -108,7 +120,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2206.04916"
+                <a href="https://arxiv.org/abs/2606.19019"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -123,7 +135,7 @@
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
-                  <span>Video</span>
+                  <span>Video (Coming Soon)</span>
                 </a>
               </span>
               <!-- Code Link. -->
@@ -133,18 +145,9 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming Soon)</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
             </div>
 
           </div>
@@ -157,34 +160,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src='../../images/patchComplete.png' width="100%">
+      <img src='../../images/flowObject.png' width="100%">
       <h2 class="subtitle has-text-centered">
-        <span class="dpatchCom">PatchComplete</span> learns strong local priors for 3D shape completion by constructing multi-resolution patch priors from train shapes, which can then be applied for effective shape completion on unseen categories.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="visualizations">
-  <div class="container is-max-desktop">
-    <div class="hero-shapenet">
-      <h2 class="subtitle has-text-centered">
-        <span class="dpatchCom">ShapeNet Visualizations</span>
-      </h2>
-      <video id="shapenet" loop autoplay muted playsinline weight="100%">
-        <source src="videos/shapenet.mp4" type="video/mp4" />
-      </video>
-    </div>
-  </div>
-  <div class="container is-max-desktop">
-    <div class="hero-scannet">
-      <h2 class="subtitle has-text-centered">
-        <span class="dpatchCom">ScanNet Visualizations</span>
-      </h2>
-      <video id="shapenet" loop autoplay muted playsinline weight="100%">
-        <source src="videos/scannet.mp4" type="video/mp4" />
-      </video>
+        <span class="dpatchCom">FlowObject is a training-free framework that combines the observational fidelity of optimization-based 3D reconstruction with the geometric completion capabilities of flow-matching generative models to achieve accurate, photorealistic 3D asset recovery from sparse-view captures.</span> 
     </div>
   </div>
 </section>
@@ -197,34 +175,79 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            While 3D shape representations enable powerful reasoning in many visual and
-            perception applications, learning 3D shape priors tends to be constrained to the
-            specific categories trained on, leading to an inefficient learning process, particularly
-            for general applications with unseen categories. Thus, we propose PatchComplete,
-            which learns effective shape priors based on multi-resolution local patches, which
-            are often more general than full shapes (e.g., chairs and tables often both share
-            legs) and thus enable geometric reasoning about unseen class categories. 
+            Recovering complete 3D representations of objects from few casual image captures remains a significant challenge. 
+            Recent 3D generative models, particularly those based on Flow-Matching (FM), can synthesize high-quality textured assets; however, they often suffer from ''synthetic bias'' where learned priors override observational evidence, alongside a lack of alignment with the observed instance. 
+            Conversely, optimization-based methods like 3D Gaussian Splatting (3DGS) provide high fidelity on visible surfaces but fail to reason about unobserved geometry. In this paper, we present FlowObject, a framework that reformulates sparse-view 3D reconstruction as a training-free, guided inverse problem. 
           </p>
           <p>
-            To learn these shared substructures, we learn multi-resolution patch priors across all train
-            categories, which are then associated to input partial shape observations by attention
-            across the patch priors, and finally decoded into a complete shape reconstruction.
-            Such patch-based priors avoid overfitting to specific train categories and enable
-            reconstruction on entirely unseen categories at test time.
+            Our approach applies a dual-space guidance strategy to steer the Ordinary Differential Equation (ODE) trajectory of a flow-matching model, enabling the completion of unseen regions through learned generative priors while enforcing strict consistency with real-world observations.
           </p>
           <p>
-            We demonstrate the effectiveness of our approach on synthetic ShapeNet data as well as challenging
-            real-scanned objects from ScanNet, which include noise and clutter, improving
-            over state of the art in novel-category shape completion by 19.3% in chamfer
-            distance on ShapeNet, and 9.0% for ScanNet.
+            By integrating a 3DGS refinement stage, FlowObject further bridges the gap between ''synthetic-looking'' generative outputs and photorealistic reconstructions. 
+            Comprehensive benchmarks on synthetic and real-world datasets demonstrate that current state-of-the-art methods often struggle to achieve geometric completeness and observational consistency simultaneously, especially under severe occlusions. 
+            In contrast, FlowObject significantly outperforms state-of-the-art generative models and optimization-based frameworks in both geometric completeness and view-dependent appearance fidelity.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
+  <section class="3d reconstruction visualizations">
+  <div class="container is-max-desktop">
+    <div class="hero-3dfront">
+      <h2 class="subtitle has-text-centered">
+        <span class="dpatchCom">3D-Front Visualizations for 3D Reconstruction</span>
+      </h2>
+      <img id="3dfront" src="vis/3dfront_3d.png" alt="3D-Front visualization" width="100%" loading="lazy" />
+    </div>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="hero-scannetpp">
+      <h2 class="subtitle has-text-centered">
+        <span class="dpatchCom">ScanNetpp Visualizations for 3D Reconstruction</span>
+      </h2>
+      <img id="scannetpp" src="vis/scannetpp_3d.png" alt="ScanNetpp visualization" width="100%" loading="lazy" />
+    </div>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="hero-shaper">
+      <h2 class="subtitle has-text-centered">
+        <span class="dpatchCom">Shaper Visualizations for 3D Reconstruction</span>
+      </h2>
+      <img id="shaper" src="vis/shaper_3d.png" alt="Shaper visualization" width="100%" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<section class="2d rendering visualizations">
+  <div class="container is-max-desktop">
+    <div class="hero-3dfront">
+      <h2 class="subtitle has-text-centered">
+        <span class="dpatchCom">3D-Front Visualizations for 2D Rendering</span>
+      </h2>
+      <img id="3dfront" src="vis/3dfront_2d.png" alt="3D-Front visualization" width="100%" loading="lazy" />
+    </div>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="hero-scannetpp">
+      <h2 class="subtitle has-text-centered">
+        <span class="dpatchCom">ScanNetpp Visualizations for 2D Rendering</span>
+      </h2>
+      <img id="scannetpp" src="vis/scannetpp_2d.png" alt="ScanNetpp visualization" width="100%" loading="lazy" />
+    </div>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="hero-shaper">
+      <h2 class="subtitle has-text-centered">
+        <span class="dpatchCom">Shaper Visualizations for 2D Rendering</span>
+      </h2>
+      <img id="shaper" src="vis/shaper_2d.png" alt="Shaper visualization" width="100%" loading="lazy" />
+    </div>
+  </div>
+</section>
+
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -232,8 +255,7 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
-    <!--/ Paper video. -->
+    </div> -->
   </div>
 </section>
 
@@ -242,11 +264,7 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{rao2022patchcomplete,
-      title={PatchComplete: Learning Multi-Resolution Patch Priors for 3D Shape Completion on Unseen Categories},
-      author={Rao, Yuchen and Nie, Yinyu and Dai, Angela},
-      journal={arXiv preprint arXiv:2206.04916},
-      year={2022}
+    <pre><code>@article{
     }    
     </code></pre>
   </div>
